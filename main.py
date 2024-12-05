@@ -1,13 +1,10 @@
-import pygame
-pygame.init()
+from code.Game import Game  # Importa a classe Game do arquivo `game.py`
 
-screen = pygame.display.set_mode((800, 600))
-pygame.display.set_caption("Esquiando nas Montanhas")
+if __name__ == "__main__":
+    game = Game()  # Inicializa a classe Game
+    game.run()     # Executa o loop principal do jogo
 
-running = True
-while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
 
-pygame.quit()
+
+
+
